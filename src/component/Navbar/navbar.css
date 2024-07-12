@@ -1,0 +1,196 @@
+
+.navbar {
+    width: 100%;
+    padding: 1rem 5rem;
+    display: flex;
+    background-color: #f2f2f2;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.dashboard-nav-logo{
+    width: 8vw;
+    height: 7vh;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    gap: 10px;
+}
+
+.user{
+    cursor: pointer;
+}
+
+.navbar .icons {
+    display: flex;
+    align-items: center;
+    
+    gap: 20px;
+}
+
+.navbar .icons .notification {
+    position: relative;
+}
+
+.navbar .icons .notification span {
+    background-color: red;
+    color: black;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.navbar .icons .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar .icons .user img {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dasboard-logout{
+    color: black;
+    font-size: 2rem;
+}
+
+.user span{
+    color: black;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  /* Header section of the notification with close icon */
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Title and message section */
+  .notification-content {
+    cursor: pointer;
+  }
+  
+  /* Title styling */
+  .title {
+    color: black;
+  }
+  
+  /* Message styling */
+  .message {
+    color: #718096;
+  }
+  
+  /* Timestamp styling */
+  .timestamp {
+    color: #6b7280;
+    font-size: 12px;
+  }
+  
+  /* Delete icon */
+  .delete-icon {
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 8px;
+    color: #718096;
+  }
+
+  .notification{
+    position: relative;
+   
+    width: 2rem;
+    height: 2rem;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+ 
+}
+
+.noti {
+    background-color: inherit;
+    font-size: large;
+    color: white;
+}
+
+.notifiation-length {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -20%;
+    right: -10%;
+}
+
+
+@media (max-width: 600px) {
+  .navbar {
+      padding: 0rem 2rem; /* Adjust padding for smaller screens */
+      height: auto; /* Allow the navbar to grow vertically on smaller screens */
+      
+      /* Align items to the start of the column */
+  }
+
+  .dashboard-nav-logo {
+     height: 5rem;
+     width: 6rem;
+  }
+
+  /* Adjust other styles for smaller screens as needed */
+  .navbar .icons {
+      gap: 10px;
+  }
+
+  .navbar .icons .notification span {
+      top: -8px;
+      right: -8px;
+      width: 12px;
+      height: 12px;
+      font-size: 10px;
+  }
+  
+  .navbar .icons .user img {
+      width: 20px;
+      height: 20px;
+  }
+
+  .noti {
+      font-size: medium;
+  }
+
+  .notifiation-length {
+      width: 16px;
+      height: 16px;
+      top: -16%;
+      right: -8%;
+  }
+}

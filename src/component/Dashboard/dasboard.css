@@ -1,0 +1,299 @@
+.dashboard-container{
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+}
+
+.dashboard-bottom{
+    width: 100%;
+    height: 100%;
+    gap: .5rem;
+    display: flex;
+    margin-top: 2%;
+}
+
+.menu-container{
+    width: 15vw;
+    height: 100%;
+    
+    padding: 0 1rem;
+    
+}
+
+.dashboard-items{
+    width: 85vw;
+    
+    padding-left: .5rem;
+    height: 100%;
+    border-left: 1px solid  black !important;
+    margin-bottom: 5vh;
+}
+
+.dashboard-items form{
+    display: flex;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    gap: 2vh;
+}
+
+.dashboard-items form .form-input{
+    padding: .5rem 1rem;
+    width: 75%;
+    
+}
+
+.dashboard-items form .form-button{
+    height: inherit;
+    width: max-content;
+    
+}
+
+.upload-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-items form textarea{
+    width: 100%;
+    height: 40vh;
+    resize: none;
+    padding: .5rem 1rem;
+}
+
+.map-div{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    gap: 2vw;
+    padding-right: .2vw;
+}
+
+.map-options{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.form-submit{
+    width: 100%;
+    background-color: #03AA6B;
+    border: none;
+    padding: 2rem;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+
+.form-submit:hover{
+   color: white !important;
+}
+
+.uploading-photo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.model-title{
+    font-size: 2.3rem;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.uploaded-photo {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow-x: auto;
+    position: relative;
+    padding-bottom: 10px; /* Add some padding to the bottom to prevent the horizontal scrollbar from overlapping with the content */
+}
+
+.upload-button{
+    display: flex;
+    gap: .5rem;
+}
+
+.image-container {
+    
+    position: relative;
+    border-radius: 5px;
+    flex: 0 0 auto; /* Ensure each container takes its content width without shrinking or growing */
+}
+
+.image-container img {
+    width: 100%; /* Make sure the image takes 100% of the container's width */
+    height: 7rem; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the container while maintaining its aspect ratio */
+}
+
+.photo-close {
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
+
+.photo-close:hover {
+    color: darkred;
+}
+
+.crt-vid{
+    display: flex;
+    width: 100%;
+
+}
+
+.create-vid-category{
+    display: flex;
+    flex-direction: column;
+}
+
+.create-vid-title{
+    width: 50%;
+}
+
+.video-category{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.dashboard-row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.dashboard-cat-heading{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.uploading-video{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.upload-video{
+    position: relative;
+    display: flex;
+}
+
+.video-remove{
+    position: absolute;
+    color: red;
+    top: 2%;
+    right: 1%;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .menu-container {
+        width: 100%;
+        max-width: none;
+    }
+
+    .dashboard-items {
+        width: 100%;
+        max-width: none;
+        margin-top: 20px; /* Add some spacing between menu and dashboard items */
+    }
+
+    .dashboard-bottom {
+        flex-direction: column;
+        align-items: center; /* Center items on smaller screens */
+    }
+
+    .products .info {
+        text-align: center; /* Center text for smaller screens */
+        margin-bottom: 20px; /* Add some spacing at the bottom */
+    }
+
+    .products .info button {
+        margin-top: 10px; /* Add some space between the button and other elements for smaller screens */
+    }
+
+    /* Adjust DataGrid styles for smaller screens */
+    .MuiDataGrid-root {
+        width: 100% !important;
+    }
+
+    .MuiDataGrid-toolbarContainer,
+    .MuiDataGrid-footerContainer {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .MuiDataGrid-colCell,
+    .MuiDataGrid-cell {
+        padding: 8px;
+    }
+
+    .create-photo-dashboard {
+        width: 80%;
+    }
+
+    .upload-button {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        align-items: center; /* Center buttons on smaller screens */
+    }
+
+    .dashboard-items .video-category {
+        padding: 0.5rem; /* Adjust padding for smaller screens */
+    }
+
+    .dashboard-cat-box {
+        width: 100%; /* Make each category box take the full width on smaller screens */
+        margin-bottom: 1rem; /* Add some spacing between category boxes on smaller screens */
+    }
+
+    .uploading-video {
+        padding: 0.5rem; /* Adjust padding for smaller screens */
+    }
+
+    .upload-video {
+        max-width: 100%; /* Ensure the video container does not exceed the screen width */
+    }
+
+    .video-remove {
+        top: 1%;
+        right: 1%;
+    }
+ 
+}

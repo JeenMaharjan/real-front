@@ -1,0 +1,46 @@
+
+
+.menu .item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.menu .item .title {
+    font-size: 12px;
+    font-weight: 200;
+    color: #03AA6B ;
+    text-transform: uppercase;
+}
+
+.menu .item .listItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.listItemTitle{
+    color: black;
+}
+
+.menu .item .listItem:hover {
+    background-color: #797777;
+}
+
+@media (max-width: 600px) {
+    .menu .item {
+        margin-bottom: 15px; /* Adjust margin for smaller screens */
+    }
+
+    .menu .item .title {
+        font-size: 11px; /* Adjust font size for smaller screens */
+    }
+
+    .menu .item .listItem {
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+}

@@ -1,0 +1,156 @@
+
+  
+.mapdand-model{
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    position: relative;
+}
+
+.mapdand-content{
+    width: 25%;
+    /* min-height: 100vh; */
+    height: 100%;
+    z-index: 10;
+    background-color: white;
+    padding: 4.1vh 1.5vw;
+}
+
+.mapdand-content h1{
+  color: #03AA6B;
+  text-align: center;
+  
+}
+
+.mapdand-content p{
+  margin-top: 5vh;
+  letter-spacing: 2px;
+  font-size: 2.1vh;
+  line-height: 1.2rem;
+  color: rgb(114, 114, 114);
+}
+
+.mapdand-content p span{
+  margin-top: 5vh;
+  letter-spacing: 2px;
+  font-size: 2.1vh;
+  line-height: 1.2rem;
+  color: red;
+}
+  /* height of the container */
+  .leaflet-container {
+    height: 100vh;
+    width: 75%;
+    z-index: 2;
+    position: relative;
+    /* border-radius: 2rem; */
+ 
+  }
+
+  .custom-vertex-icon{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: red;
+  }
+
+  .search-bar-map {
+    position: absolute !important;
+    top: 10px; /* Adjust the top position as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    z-index: 1000; /* Ensure it's above other elements */
+    border: 1px solid black;
+    width: 300px; /* Adjust width as needed */
+    background-color: white; /* Optional: Set background color */
+    padding: 5px; /* Optional: Add padding for better appearance */
+  }
+  .cluster-icon {
+    background-color: #333;
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    border: 1px solid black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    box-shadow: 0 0 0px 5px #fff;
+  }
+
+  .polygon-control{
+    position: absolute !important;
+    top: 10vh;
+  }
+
+  .leaflet-control-measure {
+    /* position: absolute !important;
+    
+    top: 10vh !important;
+    z-index: 200;
+    left: 60vw !important; */
+    z-index: 200 !important; 
+  }
+  
+  
+  @media (max-width: 600px) {
+    
+  
+.mapdand-model{
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  /* flex-wrap: wrap; */
+  position: relative;
+}
+
+.mapdand-content{
+  width: 100%;
+  /* min-height: 100vh; */
+  height: 100%;
+  z-index: 10;
+  background-color: white;
+  padding: 4.1vh 1rem;
+}
+
+.mapdand-content h1{
+color: #03AA6B;
+text-align: center;
+
+}
+
+.mapdand-content p{
+margin-top: 5vh;
+letter-spacing: 2px;
+font-size: 2.1vh;
+line-height: 1.2rem;
+color: rgb(114, 114, 114);
+}
+
+.mapdand-content p span{
+margin-top: 5vh;
+letter-spacing: 2px;
+font-size: 2.1vh;
+line-height: 1.2rem;
+color: red;
+}
+/* height of the container */
+.leaflet-container {
+  height: 89vh;
+  width: 100%;
+  z-index: 10;
+  position: relative;
+  /* border-radius: 2rem; */
+
+}
+
+
+
+
+  }

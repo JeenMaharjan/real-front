@@ -1,0 +1,703 @@
+@import url('https://fonts.googleapis.com/css?family=Pirata+One|Rubik:900');
+
+.home-page-model{
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFC;
+}
+.home-model{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+
+}
+
+
+.home-model-left{
+    width: 50%;
+    min-height: 100vh;
+    height: 100%;
+    padding: 13vh 4.1vw;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.left-title-part{
+
+  
+    text-align: center;
+}
+
+.left-title-part h1{
+    color: #03AA6B;
+    /* font-family: var(--font-monExtra); */
+    font-size: 15vh;
+    
+    position: relative;
+    z-index: 5;
+}
+
+.left-title-part h1 span{
+  
+  font-family: var(--font-helveticanbold);
+}
+
+.left-title-part h2{
+    color: orange;
+    z-index: 4;
+    letter-spacing: 4px;
+    margin-top: -6vh;
+    font-size: 10vh;
+    font-family: var(--font-highbold)
+  
+}
+
+.left-services-part{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.service-divide{
+    display: flex;
+    z-index: 10;
+    justify-content: space-between;
+}
+
+.left-services-part h2{
+    width: max-content;
+    background-color: #03AA6B;
+    color: #f2f2f2;
+    letter-spacing: 1px;
+    border-radius: 5rem;
+    padding: .8rem 1rem;
+}
+
+
+.service-divide-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    letter-spacing: 1px;
+}
+
+.service-divide-content p{
+    font-size: 2.5vh;
+    text-transform: uppercase;
+    display: flex;
+    gap: 1vw;
+}
+
+.model-left-contact-part{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.model-left-contact-part h2{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #03AA6B;
+    font-size: 4vh;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+}
+
+.contact-details-number{
+    display: flex;
+    align-items: center;
+   
+    gap: 2vw;
+}
+
+.each-number{
+    border: 5px double black;
+    cursor: pointer;
+    z-index: 10;
+    padding: .5rem;
+    width: max-content;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+
+.each-number p{
+    letter-spacing: 0.1px;
+   
+}
+
+.each-number h2{
+    font-size: 2.5vh;
+    
+}
+
+.phone-call-icon{
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    font-size: 1rem;
+    padding: .4rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.home-model-right{
+    position: relative;
+    width: 50%;
+    min-height: 100vh;
+    height: 100%;
+    clip-path: polygon(35% 0, 100% 0%, 100% 100%, 35% 100%, 0% 50%);
+    /* background-image: url(../../assests/1.jpg); */
+    background-position: center;
+    background-size: cover;
+
+}
+
+.mySwiper2{
+  width: 100%;
+  height: 100%;
+}
+
+.mySwiper2 img{
+  width: 100%;
+  min-height: 100vh;
+    height: 100%;
+}
+
+
+.decoration-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.decoration-img img{
+    position: absolute;
+    width: 12.7vw;
+    height: 26vh;
+    border-radius: 50%;
+  
+    border: .8vh solid white;
+   
+    object-fit: cover;
+
+   z-index: 10;
+}
+
+.decoration-img img:first-child{
+    top: 37vh;
+    right: 40vw;
+}
+
+.decoration-img img:nth-child(2){
+    top: 5vh;
+    right: 32vw;
+}
+
+.decoration-img img:nth-child(3){
+    bottom: 5vh;
+    right: 32vw;
+}
+
+.new-arrival-model{
+    min-height: 100vh;
+    width: 100%;
+    padding: 3vh 4.1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.new-arrival-model > h2{
+    text-align: center;
+    font-size: 6vh;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+}
+
+.home-model-banner{
+  width: 100%;
+  height: 100%;
+  padding: 0 4.1vw;
+  padding-bottom: 8vh;
+}
+
+.banner-container{
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  background-color: #E5E6FA;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  justify-content: center;
+  
+  border-radius: .5rem;
+}
+
+
+
+.banner-container img{
+  width: 20rem;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  right: -3vw;
+ 
+}
+
+.banner-container h2{
+  font-family: "Montserrat", sans-serif;
+  font-size: 3vh;
+  margin-left: 4vw;
+  width: 70%;
+
+}
+
+.banner-container p{
+
+  font-size: 2.5vh;
+  letter-spacing: 2px;
+  line-height: 1.7rem;
+  margin-left: 4vw;
+  width: 70%;
+
+}
+
+
+/* ---------------------------------------------Horizontal Card-------------------------------------------------------------- */
+
+
+
+.center {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+  }
+  
+  .wrapper {
+    display: flex;
+    grid-gap: 1em;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .wrapper > .inner {
+    display: flex;
+    grid-gap: 1em;
+    transition: all 1s ease-in-out;
+  }
+  
+  .card {
+    border-radius: 0;
+    cursor: pointer;
+    position: relative;
+    width: 29.3vw;
+    height: 70vh;
+  
+  }
+
+  .buy-status{
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    z-index: 10;
+    background-color: #03aa6ae5;
+    clip-path: circle(50% at 8% 5%);
+  }
+
+  .buy-status h2{
+    position: absolute;
+    left: 0vw;
+    top: 5vh;
+    color: rgb(187, 6, 6);
+    transform: rotate(-45deg);
+    font-size: 2.5vh;
+    letter-spacing: 3px;
+  }
+
+  .sold{
+    position: absolute;
+    left: 1vw !important;
+    top: 5vh;
+    color: rgb(187, 6, 6);
+    transform: rotate(-45deg);
+    font-size: 2.5vh;
+    letter-spacing: 3px;
+  }
+
+  .card-slider-div{
+    width: 100%;
+    height: 80%;
+  }
+
+  .mySwiper{
+    width: 100%;
+    height: 100%;
+  }
+
+  .mySwiper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card > img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 75%;
+  }
+  
+  .card > .content {
+    background: #111111 !important;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1em;
+  }
+  
+  .content h2 {
+    font-size: 0.9rem !important;
+    display: flex;
+    letter-spacing: 1px;
+    color: white;
+  }
+  
+  .content h3 {
+    display: flex;
+    gap: 0.5rem;
+    color: rgba(212, 212, 212, 0.89);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+  
+  .map {
+    display: flex;
+    margin-top: 1em;
+    gap: 2vw;
+  }
+  
+  .map > button {
+    all: unset;
+    background: #133a58;
+    cursor: pointer;
+    margin: 0 0.125em;
+    position: relative;
+    user-select: none;
+    border-radius: 100%;
+    height: 1em;
+    width: 1em;
+  }
+  
+  .map > button.active:after {
+    background: #001d38;
+    content: "";
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    border-radius: 100%;
+    height: 0.5em;
+    width: 0.5em;
+  }
+  
+  /* Mobile view adjustments */
+  @media (max-width: 768px) {
+    .card {
+      width: 80vw;
+      height: 50vh;
+    }
+  
+    .wrapper > .inner {
+      transition: all 1s ease-in-out;
+    }
+  }
+  
+
+/* ---------------------------------------------Horizontal Card-------------------------------------------------------------- */
+
+@media (max-width: 600px) {
+   
+    
+    .home-model-left{
+        width: 100%;
+        min-height: 100vh;
+        height: 100%;
+        padding: 15vh 4.1vw;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+    
+    .left-title-part{
+        text-align: center;
+    }
+    
+    .left-title-part h1{
+     
+        font-size: 4rem;
+      
+    }
+    
+    .left-title-part h2{
+       
+        margin-top: -4vh;
+        font-size: 3rem;
+      
+      
+    }
+    
+    .left-services-part{
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+    }
+    
+ 
+    
+    .left-services-part h2{
+ 
+  
+        font-size: 1.3rem;
+        padding: .8rem 1rem;
+    }
+    
+    
+    .service-divide-content{
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        letter-spacing: 1px;
+    }
+    
+    .service-divide-content p{
+        
+        font-size: .8rem;
+      
+    }
+    
+    .model-left-contact-part{
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+    }
+    
+    .model-left-contact-part h2{
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #03AA6B;
+        font-size: 1.3rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+    }
+    
+    .contact-details-number{
+        display: flex;
+        flex-wrap: wrap;
+       
+        place-items: center;
+        gap: 2vw;
+    }
+    
+
+    
+    .each-number p{
+        letter-spacing: 0.1px;
+       
+    }
+    
+    .each-number h2{
+        font-size: 2.5vh;
+        
+    }
+    
+    .phone-call-icon{
+        
+        
+        padding: .8rem;
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .home-model-right{
+        display: none;
+       
+    
+    }
+    
+    .decoration-img{
+        
+        display: none;
+    }
+
+    .home-model-banner{
+      width: 100%;
+      height: 100%;
+      padding: 0 4.1vw;
+      padding-bottom: 8vh;
+    }
+    
+    .banner-container{
+      position: relative;
+      width: 100%;
+      height: 43rem;
+      background-color: #E5E6FA;
+      
+      display: flex;
+      flex-direction: column;
+      gap: 4vh;
+      justify-content: flex-start;
+      padding: 3rem 1.5rem;
+      border-radius: .5rem;
+    }
+    
+    
+    
+    .banner-container img{
+      width: 100%;
+      height: 15rem;
+      object-fit: contain;
+      position: absolute;
+      right: -3vw;
+      
+      bottom: -.3rem !important;
+    }
+    
+    .banner-container h2{
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.3rem;
+      margin-left: 0vw;
+      width: 100%;
+    
+    }
+    
+    .banner-container p{
+    
+      font-size: .8rem;
+      letter-spacing: 2px;
+      margin-left: 0vw;
+      width: 100%;
+    
+    }
+    
+    
+    /* ---------------------------------------------Horizontal Card-------------------------------------------------------------- */
+
+
+
+.center {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+  }
+  
+
+  
+  .wrapper > .inner {
+    display: flex;
+    grid-gap: 1em;
+    transition: all 1s ease-in-out;
+  }
+  
+  .card {
+    position: relative;
+    border-radius: 0;
+    width: 21rem;
+    height: 25rem;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card > img {
+    
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+
+    height: 71%;
+  }
+  
+  .card > .content {
+    background: #0a2640;
+    width: 100%;
+    height: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+    padding: 1em;
+    
+  }
+  
+  .content h2{
+      font-size: .9rem !important;
+      display: flex ;
+      letter-spacing: 1px;
+    align-items: start;
+      color: white;
+  }
+  
+  .content h3{
+      display: flex;
+      gap: .5rem;
+      font-size: .8rem;
+      letter-spacing: 1px;
+  }
+  
+  .map {
+      display: flex;
+    gap: 1rem;
+    margin-top: 1em;
+  }
+  
+  .map > button {
+    all: unset;
+    background: #133a58;
+    cursor: pointer;
+    margin: 0 0.125em;
+    position: relative;
+    user-select: none;
+    border-radius: 100%;
+    height: 1em;
+    width: 1em;
+  }
+  
+  .map > button.active:after {
+    background: #001d38;
+    content: "";
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    border-radius: 100%;
+    height: 0.5em;
+    width: 0.5em;
+  }
+
+  
+  
+  
+  /* ---------------------------------------------Horizontal Card-------------------------------------------------------------- */
+
+    
+
+ 
+  
+    
+}

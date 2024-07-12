@@ -1,0 +1,162 @@
+.area-converter-model{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    padding: 6vh 4.1vw;
+}
+
+.area-converter-model > h1{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 5vh;
+    color: #03AA6B;
+}
+
+
+
+
+  
+  .input-section {
+    margin-top: 4vh;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+    gap: 10px;
+  }
+  
+  .form-control {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .result-section {
+    margin-bottom: 20px;
+  }
+  
+  .result-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .result-group h2 {
+    margin: 0;
+    letter-spacing: 1px;
+  }
+
+  .input-group input{
+    letter-spacing: 1px;
+  }
+
+  .result-group input{
+    letter-spacing: 1px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .convert-button, .clear-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .convert-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .clear-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  @media (max-width: 600px) {
+    .area-converter-model{
+     
+        padding: 16vh 4.1vw;
+    }
+    
+    .area-converter-model > h1{
+       
+        font-size: 1.8rem;
+  
+    }
+    
+    
+    
+    
+      
+      .input-section {
+        margin-top: 4vh;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 20px;
+      }
+      
+      .input-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      
+      .form-control {
+        padding: 10px;
+        font-size: 1em;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      
+      .result-section {
+        margin-bottom: 20px;
+      }
+      
+      .result-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+      
+      .result-group h2 {
+        margin: 0;
+      }
+      
+      .button-group {
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .convert-button, .clear-button {
+        padding: 10px 20px;
+        font-size: 1em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .convert-button {
+        background-color: #007bff;
+        color: white;
+      }
+      
+      .clear-button {
+        background-color: #dc3545;
+        color: white;
+      }
+      
+  }

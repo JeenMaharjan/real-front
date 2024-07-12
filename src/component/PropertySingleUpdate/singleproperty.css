@@ -1,0 +1,13 @@
+.form-sold{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.form-sold label{
+    color: red;
+}
+
+.form-sold select{
+    padding: .2rem 1rem;
+}

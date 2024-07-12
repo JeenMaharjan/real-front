@@ -1,0 +1,109 @@
+.login-container {
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(0, 0, 0, 0.959); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-part {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px; /* Responsive max-width */
+    align-items: center;
+    gap: 1rem;
+}
+
+.login-logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4%;
+    cursor: pointer;
+}
+
+.login-logo img {
+    max-width: 70%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem; /* Responsive padding */
+    gap: 0.5rem;
+    background-color: rgba(37, 35, 35, 0.41);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 0.5rem; /* Rounded corners */
+}
+
+.login-form input {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem; /* Space between inputs */
+    font-size: 1rem; /* Larger font size for readability */
+    color: #fff;
+    outline: none;
+    background-color: #333;
+}
+
+.login-button {
+    width: 100%; /* Make the button full-width for better mobile experience */
+    padding: 1rem; /* Sufficient padding for tap targets */
+    font-size: 1rem; /* Legible font size */
+    font-weight: bold; /* Make the text stand out */
+    color: #FFFFFF; /* White text */
+    background-color: #007BFF; /* A pleasant blue background */
+    border: none; /* No border */
+    border-radius: 0.25rem; /* Rounded corners */
+    cursor: pointer; /* Indicates the element is clickable */
+    transition: background-color 0.2s, transform 0.1s; /* Smooth transitions for visual feedback */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    text-align: center; /* Ensure text is centered */
+}
+
+.login-button:hover {
+    background-color: #0056b3; /* A darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Larger shadow on hover for a "lifted" effect */
+}
+
+.login-button:active {
+    transform: translateY(2px); /* Button presses down when clicked */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Smaller shadow when button is pressed */
+}
+
+.password-change{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 100;
+  
+}
+
+
+
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .middle-part {
+        width: 90%;
+        height: auto; /* Adjust height for smaller devices */
+    }
+
+    .login-logo img {
+        max-width: 60%; /* Larger logo on smaller screens */
+    }
+
+    .login-form {
+        padding: 1.5rem; /* Adjust padding for smaller devices */
+    }
+}
